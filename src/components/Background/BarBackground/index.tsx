@@ -21,8 +21,8 @@ const BarBackgrond: React.FC<BarProps> = ({
   side,
 }) => {
   const transition = useSpring({
-    from: { transform: side ? 'rotate(-50deg)' : 'rotate(-125deg)' },
-    to: { transform: side ? 'rotate(-125deg)' : 'rotate(-50deg)' },
+    from: { transform: side ? 'rotate(-50deg)' : 'rotate(-128deg)' },
+    to: { transform: side ? 'rotate(-128deg)' : 'rotate(-50deg)' },
     delay,
   });
 
