@@ -41,7 +41,7 @@ export const Bar = styled(animated.div)<BarProps>`
   @media all and (max-width: 1360px) {
     & {
       top: -10%;
-      left: -45%;
+      left: -24%;
     }
   }
 
