@@ -43,8 +43,10 @@ const Contacts: React.FC = () => {
             </a>
           </li>
           <li>
-            <MdEmail size={120} color="#82a2de" />
-            <p>ruan.fer.gui@gmail.com</p>
+            <a href="gmail.com" target="_blank">
+              <MdEmail size={120} color="#82a2de" />
+              <p>ruan.fer.gui@gmail.com</p>
+            </a>
           </li>
         </ul>
       </animated.div>

@@ -17,5 +17,6 @@ export default createGlobalStyle`
     /* background: #312e38; */
     background: #FCF8F8;
     color: #FCF8F8;
+    position: relative;
   }
 `;

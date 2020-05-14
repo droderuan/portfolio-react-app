@@ -12,4 +12,10 @@ export const Container = styled.section`
   position: absolute;
   z-index: 5;
   top: 200px;
+
+  @media all and (max-width: 800px) {
+    & {
+      top: 350px;
+    }
+  }
 `;

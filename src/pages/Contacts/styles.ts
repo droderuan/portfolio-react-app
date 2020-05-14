@@ -12,12 +12,12 @@ export const Container = styled.div`
 
   ul {
     display: flex;
+    flex-flow: row wrap;
+    list-style: none;
 
     li {
-      display: flex;
-      align-items: center;
-      margin-left: 88px;
       border-radius: 10px;
+      margin: 0 20px;
       padding: 5px;
       transition: box-shadow 300ms ease-in;
 
@@ -28,15 +28,17 @@ export const Container = styled.div`
       a {
         text-decoration: none;
         display: flex;
+        flex-flow: row wrap;
         align-items: center;
-      }
+        justify-content: center;
+
 
       p {
-        margin-left: 38px;
+        margin: 38px;
 
         color: #000;
         font-family: 'Quicksand', sans-serif;
-        font-size: 32px;
+        font-size: min(max(24px, 4vw), 18px);
       }
     }
   }

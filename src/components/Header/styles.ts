@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 export const Container = styled.header`
-  height: 140px;
   margin-top: 50px;
   width: 100%;
+  min-width: 370px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,12 +21,17 @@ export const Container = styled.header`
   nav {
     width: 100%;
     ul {
+      width: 100%;
+
       display: flex;
+      flex-flow: row wrap;
+
       align-items: center;
       justify-content: space-evenly;
 
       li {
         list-style: none;
+        margin: 0 30px;
 
         a {
           display: flex;

@@ -11,18 +11,18 @@ interface BackgroundProps {
 }
 
 const Background: React.FC = () => {
-  const location = useLocation();
+  const { pathname } = useLocation();
 
   const [props, setProps] = useState<BackgroundProps>({
-    url: location.pathname,
+    url: pathname,
     side: false,
   });
 
   useEffect(() => {
-    if (props.url !== location.pathname) {
-      setProps({ url: location.pathname, side: !props.side });
+    if (props.url !== pathname) {
+      setProps({ url: pathname, side: !props.side });
     }
-  }, [location.pathname]);
+  }, [pathname, props]);
   return (
     <Container>
       <BarBackground zIndex={2} position={0} delay={400} side={props.side} />
